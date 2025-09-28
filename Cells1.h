@@ -19,8 +19,8 @@ public:
     int size() const { return (int)cells.size(); }
     int total() const;
 
-    long long getTotalMoves() const; // повернути кількість переміщень
-    void resetMoves();               // обнулити лічильник
+    long long getTotalMoves() const;
+    void resetMoves();
 };
 
 #endif

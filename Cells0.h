@@ -7,18 +7,18 @@
 class Cells0 {
 private:
     std::vector<int> cells;
-    std::atomic<long long> totalMoves; // лічильник переміщень
+    std::atomic<long long> totalMoves;
 
 public:
     Cells0(int n, int k);
 
-    void move(int from, int to);  // без блокувань
+    void move(int from, int to);
     int getCell(int i) const;
     int size() const { return (int)cells.size(); }
     int total() const;
 
-    long long getTotalMoves() const; // повернути кількість переміщень
-    void resetMoves();               // обнулити лічильник
+    long long getTotalMoves() const;
+    void resetMoves();
 };
 
 #endif
